@@ -5,12 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="languages">
-        <a href="#en">English</a>
-        <a href="#ru">Русский</a>
-    </div>
+    <header class="header">
+        <nav class="nav">
+            <a href="#about" class="nav--link-decoration">About me</a>
+            <a href="#prev" class="nav--link-decoration">Career</a>
+            <a href="#projects" class="nav--link-decoration">Projects</a>
+            <a href="#contacts" class="nav--link-decoration">Contacts</a>
+        </nav>
+        <!-- <div class="container languages">
+                <a href="#en">English</a>
+                <a href="#ru">Русский</a>
+                <a href="#by">Беларускі</a>
+            </div> -->
+    </header>
+    <main>
+        <section class="info">
+            <article class="info__project">
+                <h2>Projects</h2>
+            </article>
+            <article class="container info__about">
+                <img src="assets/images/index.jfif" alt="My photo" class="info__photo">
+                <div class="info__about--story">
+                    <h2 class="info__about--header">About me</h2>
+                    <p>
+                        Hi! My name is Igor. On this page you can see my achivements, career step.
+                        I want to become Full Stack Developer. For me learning something new really important. 
+                        If I want to become a good developer I should read more books, articles about programming, for example 
+                        how processor works when it’s running a program. In future I want to relocate in English speaking 
+                        countries to improve my English.
+                    </p>
+
+                    <h3>Education</h3>
+                    <p>I've graduated from BSUIR in 2017.</p>
+
+                    <h3>Courses</h3>
+                    <ul>
+                        <li>English courses</li>
+                            <ul>
+                                <li>I've finished Streamline Intermediate and Upper-Intermediate course.</li>
+                            </ul>
+                        <li>Online courses</li>
+                            <ul>
+                                <li>Coursera python course (<a href="https://www.coursera.org/learn/diving-in-python" target="_blank">Diving in python</a>)</li>
+                            </ul>
+                    </ul>
+                    <h3>Technologies</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>JavaScript, HTML, CSS</li>
+                        <li>Git</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="career">
+            <article class="container info__career">
+                <h2 class="info__career--header">Career</h2>
+                <div class="info__career--modifier">
+                    <div>
+                        <p class="info__career--date">August 2018 - December 2019</p>
+                        <p class="info__career--company">Nitka Technologies</p>
+                        <p class="info__career--position">Programmer analyst</p>
+                    </div>
+                    <p class="info__career--description">ddd</p>
+                </div>
+                <div class="info__career--">
+                    <p class="info__career--date">February 2017 - August 2018</p>
+                    <p class="info__career--company">«Center vnedreniy» Ltd</p>
+                    <p class="info__career--position">Programmer</p>
+                    <p class="info__career--description"></p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer id="contacts" class="footer">
+        <div class="container">
+            Contacts
+            <a href="http://t.me/igorsht">Telegram</a>
+            <a href="mailto:">shturmak.i.i@gmail.com</a>
+            <a href="tel:+375291471491">+375 (29) 147-14-91</a>
+        </div>
+    </footer>
 
     <p class="hi">
         Hi, everybody!
