@@ -11,6 +11,7 @@ body {
 }
 
 .header {
+    display: flex;
     background-color: #323232;
 }
 
@@ -18,8 +19,9 @@ body {
     display: flex;
     height: 25px;
     padding: 20px 0;
-    justify-content: center;
+    margin: auto;
     flex-wrap: wrap;
+    align-content: center;
 }
 
 .nav--link-decoration {
@@ -32,6 +34,19 @@ body {
 
 .nav--link-decoration:hover {
     color: #33b6dd;
+}
+
+.header__languages {
+    padding-right: 15px;
+}
+
+.header__languages--img {
+    width: 2em;
+}
+
+.languages {
+    display: flex;
+    align-self: center;
 }
 
 .info {
@@ -50,6 +65,10 @@ body {
     margin-top: 0;
 }
 
+.info__about--text {
+    padding-left: 40px;
+}
+
 .info__photo {
     border-radius: 50%;
     height: 10em;
@@ -64,10 +83,15 @@ body {
     padding: 50px 0;
     background-color: #197764;
     justify-content: center;
+    font-size: 17px;
+}
+
+.info__career--dcp {
+    width: 290px;
 }
 
 .info__career--header {
-    padding-left: 50px + 10em;
+    text-align: center;
 }
 
 .info__career--modifier {
@@ -91,10 +115,35 @@ body {
 
 .info__career--description {
     padding-left: 25px;
+    max-width: 400px;
 }
 
 .footer {
     display: flex;
-    padding: 50px 0;
+    padding: 40px 0;
     background-color: #323232;
+    font-family: 'Gelasio', serif;
+}
+
+.footer__communication {
+    list-style: none;
+}
+
+.footer__communication--items {
+    height: 3em;
+}
+
+.footer__communication--pic {
+    width: 2em;
+    padding-right: 25px;
+    vertical-align: middle;
+}
+
+.footer__communication--link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__communication--link:hover {
+    color: #aaa;
 }

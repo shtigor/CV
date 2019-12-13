@@ -10,38 +10,45 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="#about" class="nav--link-decoration">About me</a>
-            <a href="#prev" class="nav--link-decoration">Career</a>
-            <a href="#projects" class="nav--link-decoration">Projects</a>
-            <a href="#contacts" class="nav--link-decoration">Contacts</a>
+            <a href="#about" class="nav--link-decoration" id="about-me">About me</a>
+            <a href="#career" class="nav--link-decoration" id="career-nav">Career</a>
+            <a href="#projects" class="nav--link-decoration" id="projects">Projects</a>
+            <a href="#contacts" class="nav--link-decoration" id="contacts">Contacts</a>
         </nav>
-        <!-- <div class="container languages">
-                <a href="#en">English</a>
-                <a href="#ru">Русский</a>
-                <a href="#by">Беларускі</a>
-            </div> -->
+        <div class="languages">
+            <a href="#en" class="header__languages">
+                <img class="header__languages--img" src="assets/images/uk.svg" alt="English">
+            </a>
+            <a href="#ru" class="header__languages">
+                <img class="header__languages--img" src="assets/images/russia.svg" alt="Russian">
+            </a>
+            <!-- <a href="#by" class="header__languages"><img class="header__languages--img" src="assets/images/belarus.svg" alt="Belarusian"></a> -->
+        </div>
     </header>
     <main>
         <section class="info">
             <article class="info__project">
                 <h2>Projects</h2>
             </article>
-            <article class="container info__about">
+            <article class="container info__about" id="about">
                 <img src="assets/images/index.jfif" alt="My photo" class="info__photo">
                 <div class="info__about--story">
                     <h2 class="info__about--header">About me</h2>
-                    <p>
-                        Hi! My name is Igor. On this page you can see my achivements, career step.
+                    <p class="info__about--text" id="description">
+                        Hi! My name is Igor. On this page you can see my achivements, career steps, projects.
                         I want to become Full Stack Developer. For me learning something new really important. 
-                        If I want to become a good developer I should read more books, articles about programming, for example 
-                        how processor works when it’s running a program. In future I want to relocate in English speaking 
-                        countries to improve my English.
+                        If I want to become a good developer I should read more books, articles.
+                        Take part in conferences to improve my skills. In future I want to relocate.
                     </p>
 
-                    <h3>Education</h3>
-                    <p>I've graduated from BSUIR in 2017.</p>
+                    <p>
 
-                    <h3>Courses</h3>
+                    </p>
+
+                    <h3 class="education">Education</h3>
+                    <p class="info__about--text" id="educationDescription">I've graduated from BSUIR in 2017.</p class="info__about--text">
+
+                    <h3 class="courses">Courses</h3>
                     <ul>
                         <li>English courses</li>
                             <ul>
@@ -51,6 +58,7 @@
                             <ul>
                                 <li>Coursera python course (<a href="https://www.coursera.org/learn/diving-in-python" target="_blank">Diving in python</a>)</li>
                             </ul>
+                        <li>RS school</li>
                     </ul>
                     <h3>Technologies</h3>
                     <ul>
@@ -63,38 +71,52 @@
                 </div>
             </article>
         </section>
-        <section class="career">
+        <section class="career" id="career">
             <article class="container info__career">
                 <h2 class="info__career--header">Career</h2>
                 <div class="info__career--modifier">
-                    <div>
+                    <div class="info__career--dcp">
                         <p class="info__career--date">August 2018 - December 2019</p>
                         <p class="info__career--company">Nitka Technologies</p>
                         <p class="info__career--position">Programmer analyst</p>
                     </div>
-                    <p class="info__career--description">ddd</p>
+                    <p class="info__career--description">
+                        Create surveys and analyze respondent data. Work in team, attend team meetings.
+                        Abilities which I've got are read other's people code, work in team,
+                        solve tasks quickly. Also I develop my English.
+                    </p>
                 </div>
-                <div class="info__career--">
-                    <p class="info__career--date">February 2017 - August 2018</p>
-                    <p class="info__career--company">«Center vnedreniy» Ltd</p>
-                    <p class="info__career--position">Programmer</p>
-                    <p class="info__career--description"></p>
+                <div class="info__career--modifier">
+                    <div class="info__career--dcp">
+                        <p class="info__career--date">February 2017 - August 2018</p>
+                        <p class="info__career--company">«Center vnedreniy» Ltd</p>
+                        <p class="info__career--position">Programmer</p>
+                    </div>
+                    <p class="info__career--description">
+                        Create, update configurations. Work with clients, solved their issues.
+                    </p>
                 </div>
             </article>
         </section>
     </main>
     <footer id="contacts" class="footer">
         <div class="container">
-            Contacts
-            <a href="http://t.me/igorsht">Telegram</a>
-            <a href="mailto:">shturmak.i.i@gmail.com</a>
-            <a href="tel:+375291471491">+375 (29) 147-14-91</a>
+            <ul class="footer__communication">
+                <li class="footer__communication--items">
+                    <img src="assets/images/telegram.svg" alt="Telegram pic" class="footer__communication--pic">
+                    <a href="http://t.me/igorsht" class="footer__communication--link" target="_blank">Telegram</a>
+                </li>
+                <li class="footer__communication--items">
+                    <img src="assets/images/gmail.svg" alt="Mail pic" class="footer__communication--pic">
+                    <a href="mailto:shturmak.i.i@gmail.com" class="footer__communication--link">shturmak.i.i@gmail.com</a>
+                </li>
+                <li class="footer__communication--items">
+                    <img src="assets/images/smartphone_1.svg" alt="Phone pic" class="footer__communication--pic">
+                    <a href="tel:+375291471491" class="footer__communication--link">+375 (29) 147-14-91</a>
+                </li>
+            </ul>
         </div>
     </footer>
-
-    <p class="hi">
-        Hi, everybody!
-    </p>
 
     <script src="index.js"></script>
 </body>
