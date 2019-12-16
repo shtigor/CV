@@ -117,9 +117,20 @@ if (window.location.hash) {
 
 let dataReload = document.querySelector(".languages")
 // define language reload onclick
-for (i = 0; i < dataReload.children.length; i++) {
+for (let i = 0; i < dataReload.children.length; i++) {
     dataReload.children[i].addEventListener('click', (click) => {
         location.hash = click.currentTarget.hash;
         location.reload(true);
     });
 }
+
+
+let navigation = document.querySelector('.nav__links');
+let menu = document.querySelector('.menu');
+menu.addEventListener('click', () => {
+    if (navigation.style.display === "block") {
+        navigation.style.display = "none";
+    } else {
+        navigation.style.display = "block";
+    }
+})

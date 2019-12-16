@@ -10,10 +10,13 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="#about" class="nav--link-decoration" id="about-me">About me</a>
-            <a href="#projects" class="nav--link-decoration" id="projects-nav">Projects</a>
-            <a href="#career" class="nav--link-decoration" id="career-nav">Career</a>
-            <a href="#contacts" class="nav--link-decoration" id="contacts-nav">Contacts</a>
+            <div class="nav__links">
+                <a href="#about" class="nav--link-decoration" id="about-me">About me</a>
+                <a href="#projects" class="nav--link-decoration" id="projects-nav">Projects</a>
+                <a href="#career" class="nav--link-decoration" id="career-nav">Career</a>
+                <a href="#contacts" class="nav--link-decoration" id="contacts-nav">Contacts</a>
+            </div>
+            <div class="menu"></div>
         </nav>
         <div class="languages">
             <a href="#en" class="header__languages">
@@ -44,11 +47,11 @@
                     <h3 class="courses">Courses</h3>
                     <ul>
                         <li class="english-courses">English courses</li>
-                            <ul>
+                            <ul class="ul-inner">
                                 <li class="english-courses-description">I've finished Streamline Intermediate and Upper-Intermediate course.</li>
                             </ul>
                         <li class="online-courses">Online courses</li>
-                            <ul>
+                            <ul class="ul-inner">
                                 <li class="online-courses-description">Coursera python course (<a href="https://www.coursera.org/learn/diving-in-python" target="_blank">Diving in python</a>)</li>
                             </ul>
                         <li>RS school</li>
@@ -123,7 +126,7 @@
         </section>
 
         <section class="career" id="career">
-            <article class="container info__career">
+            <article class="info__career">
                 <h2 class="info__career--header career-header-translation">Career</h2>
                 <div class="info__career--modifier">
                     <div class="info__career--dcp">
@@ -151,7 +154,7 @@
         </section>
     </main>
     <footer id="contacts" class="footer">
-        <div class="container">
+        <div class="container footer__contacts">
             <ul class="footer__communication">
                 <li class="footer__communication--items">
                     <img src="assets/images/telegram.svg" alt="Telegram pic" class="footer__communication--pic">

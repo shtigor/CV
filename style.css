@@ -22,12 +22,17 @@ body {
     margin: auto;
     flex-wrap: wrap;
     align-content: center;
+    overflow: hidden;
+}
+
+.nav .icon {
+    display: none;
 }
 
 .nav--link-decoration {
     color: #ececec;
     font-family: 'Gelasio', serif;
-    margin: 0 15px ;
+    margin: 0 15px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -67,6 +72,7 @@ body {
 
 .info__about--text {
     padding-left: 40px;
+    text-align: justify;
 }
 
 .info__photo {
@@ -192,8 +198,9 @@ body {
 }
 
 .info__career--description {
-    padding-left: 25px;
+    padding-left: 0px;
     max-width: 400px;
+    text-align: justify;
 }
 
 .footer {
@@ -205,6 +212,7 @@ body {
 
 .footer__communication {
     list-style: none;
+    padding-left: 0px;
 }
 
 .footer__communication--items {
@@ -224,4 +232,102 @@ body {
 
 .footer__communication--link:hover {
     color: #aaa;
+}
+
+.menu {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    border-right: 2px solid #ececec;
+    transform: rotate(90deg);
+}
+
+.menu::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    height: 40px;
+    border-right: 2px solid #ececec;
+}
+
+.menu::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -8px;
+    height: 40px;
+    border-right: 2px solid #ececec;
+}
+
+.menu:hover,
+.menu:hover::after,
+.menu:hover::before  {
+    border-right: 2px solid #33b6dd;
+}
+
+.menu {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .info__about {
+        flex-direction: column;
+        align-items: center;
+        margin: 70px 50px;
+        padding-top: 40px;
+    }
+
+    .info__photo {
+        margin-right: 0px;
+    }
+
+    .info__about--text {
+        padding-left: 20px;
+    }
+    
+    .ul-inner {
+        padding-left: 25px;
+    }
+
+    .info__career--modifier {
+        flex-direction: column;
+    }
+
+    .career {
+        padding: 70px 50px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .nav {
+        margin-left: 0px;
+        padding-left: 40px;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+    }
+
+    .nav {
+        position: relative;
+        height: 50px;
+    }
+
+    .footer__contacts {
+        display: flex;
+        margin: 0;
+    }
+
+    .container {
+        margin: auto 35px;
+    }
 }
