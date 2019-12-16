@@ -11,9 +11,9 @@
     <header class="header">
         <nav class="nav">
             <a href="#about" class="nav--link-decoration" id="about-me">About me</a>
+            <a href="#projects" class="nav--link-decoration" id="projects-nav">Projects</a>
             <a href="#career" class="nav--link-decoration" id="career-nav">Career</a>
-            <a href="#projects" class="nav--link-decoration" id="projects">Projects</a>
-            <a href="#contacts" class="nav--link-decoration" id="contacts">Contacts</a>
+            <a href="#contacts" class="nav--link-decoration" id="contacts-nav">Contacts</a>
         </nav>
         <div class="languages">
             <a href="#en" class="header__languages">
@@ -27,9 +27,6 @@
     </header>
     <main>
         <section class="info">
-            <article class="info__project">
-                <h2>Projects</h2>
-            </article>
             <article class="container info__about" id="about">
                 <img src="assets/images/index.jfif" alt="My photo" class="info__photo">
                 <div class="info__about--story">
@@ -41,29 +38,26 @@
                         Take part in conferences to improve my skills. In future I want to relocate.
                     </p>
 
-                    <p>
-
-                    </p>
-
                     <h3 class="education">Education</h3>
-                    <p class="info__about--text" id="educationDescription">I've graduated from BSUIR in 2017.</p class="info__about--text">
+                    <p class="info__about--text" id="educationDescription">I graduated from BSUIR in 2017.</p class="info__about--text">
 
                     <h3 class="courses">Courses</h3>
                     <ul>
-                        <li>English courses</li>
+                        <li class="english-courses">English courses</li>
                             <ul>
-                                <li>I've finished Streamline Intermediate and Upper-Intermediate course.</li>
+                                <li class="english-courses-description">I've finished Streamline Intermediate and Upper-Intermediate course.</li>
                             </ul>
-                        <li>Online courses</li>
+                        <li class="online-courses">Online courses</li>
                             <ul>
-                                <li>Coursera python course (<a href="https://www.coursera.org/learn/diving-in-python" target="_blank">Diving in python</a>)</li>
+                                <li class="online-courses-description">Coursera python course (<a href="https://www.coursera.org/learn/diving-in-python" target="_blank">Diving in python</a>)</li>
                             </ul>
                         <li>RS school</li>
                     </ul>
-                    <h3>Technologies</h3>
+                    <h3 class="technologies-translation">Technologies</h3>
                     <ul>
                         <li>Python</li>
                         <li>Django</li>
+                        <li>Pandas</li>
                         <li>JavaScript, HTML, CSS</li>
                         <li>Git</li>
                         <li>SQL</li>
@@ -71,16 +65,73 @@
                 </div>
             </article>
         </section>
+
+        <section class="project" id="projects">
+            <article class="container info__project">
+                <h2 class="info__project--header project-header-translation">Projects</h2>
+                <h3>HTML, CSS</h3>
+                <ul class="info__project--list">
+                    <li class="info__project--item">
+                        <a href="https://shtigor.gitlab.io/htmlacademy/" target="_blank" class="info__project--link">
+                            <img src="assets/images/projects/TheBeautifulDogs.jpg" alt="The Beautiful Dogs" class="info__project--img scroll">
+                        </a>
+                        <a href="https://gitlab.com/shtigor/htmlacademy" class="btn project-item project-git" target="_blank">Git</a>
+                        <a href="https://shtigor.gitlab.io/htmlacademy/" class="btn project-item project-link" target="_blank">Link</a>
+                    </li>
+                    <li class="info__project--item">
+                        <a href="https://shtigor.gitlab.io/the_modernist/" target="_blank" class="info__project--link">
+                            <img src="assets/images/projects/TheModernist.png" alt="The Modernist" class="info__project--img scroll">
+                        </a>
+                        <a href="https://gitlab.com/shtigor/the_modernist" class="btn project-item project-git" target="_blank">Git</a>
+                        <a href="https://shtigor.gitlab.io/the_modernist/" class="btn project-item project-link" target="_blank">Link</a>
+                    </li>
+                    <li class="info__project--item">
+                        <a href="https://shtigor.github.io/tributepageazgur/" target="_blank" class="info__project--link">
+                            <img src="assets/images/projects/ZairAzgur.png" alt="Zair Azgur" class="info__project--img scroll">
+                        </a>
+                        <a href="https://github.com/shtigor/tributepageazgur" class="btn project-item project-git" target="_blank">Git</a>
+                        <a href="https://shtigor.github.io/tributepageazgur/" class="btn project-item project-link" target="_blank">Link</a>
+                    </li>
+                    <li class="info__project--item">
+                        <a href="https://shtigor.github.io/hexal/" target="_blank" class="info__project--link">
+                            <img src="assets/images/projects/Hexal.png" alt="Hexal" class="info__project--img scroll">
+                        </a>
+                        <a href="https://github.com/shtigor/hexal" class="btn project-item project-git" target="_blank">Git</a>
+                        <a href="https://shtigor.github.io/hexal/" class="btn project-item project-link" target="_blank">Link</a>
+                    </li>
+                </ul>
+                <h3>HTML, CSS & JS</h3>
+                <ul class="info__project--list">
+                    <li class="info__project--item">
+                        <a href="https://shtigor.github.io/piskel-clone/piskel-clone/" target="_blank" class="info__project--link">
+                            <img src="assets/images/projects/AnimationPlayer.png" alt="Animation player" class="info__project--img">
+                        </a>
+                        <a href="https://github.com/shtigor/piskel-clone" class="btn project-item project-git" target="_blank">Git</a>
+                        <a href="https://shtigor.github.io/piskel-clone/piskel-clone/" class="btn project-item project-link" target="_blank">Link</a>
+                    </li>
+                </ul>
+                <h3>Backend (Django) + Frontend</h3>
+                <ul class="info__project--list">
+                    <li class="info__project--item">
+                        <a href="https://shtigor.gitlab.io/htmlacademy/" target="_blank" class="info__project--link">
+                            <img src="assets/images/projects/NewsPaperApp.png" alt="News paper app" class="info__project--img scroll">
+                        </a>
+                        <a href="https://gitlab.com/shtigor/newspaper" class="btn project-item project-git" target="_blank">Git</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
         <section class="career" id="career">
             <article class="container info__career">
-                <h2 class="info__career--header">Career</h2>
+                <h2 class="info__career--header career-header-translation">Career</h2>
                 <div class="info__career--modifier">
                     <div class="info__career--dcp">
-                        <p class="info__career--date">August 2018 - December 2019</p>
-                        <p class="info__career--company">Nitka Technologies</p>
-                        <p class="info__career--position">Programmer analyst</p>
+                        <p class="info__career--date scnd-career-date">August 2018 - December 2019</p>
+                        <p class="info__career--company scnd-career-name">Nitka Technologies</p>
+                        <p class="info__career--position scnd-career-pstn">Programmer analyst</p>
                     </div>
-                    <p class="info__career--description">
+                    <p class="info__career--description scnd-career-dscrptn">
                         Create surveys and analyze respondent data. Work in team, attend team meetings.
                         Abilities which I've got are read other's people code, work in team,
                         solve tasks quickly. Also I develop my English.
@@ -88,11 +139,11 @@
                 </div>
                 <div class="info__career--modifier">
                     <div class="info__career--dcp">
-                        <p class="info__career--date">February 2017 - August 2018</p>
-                        <p class="info__career--company">«Center vnedreniy» Ltd</p>
-                        <p class="info__career--position">Programmer</p>
+                        <p class="info__career--date fsrt-career-date">February 2017 - August 2018</p>
+                        <p class="info__career--company fsrt-career-name">«Center vnedreniy» Ltd</p>
+                        <p class="info__career--position fsrt-career-pstn">Programmer</p>
                     </div>
-                    <p class="info__career--description">
+                    <p class="info__career--description fsrt-career-dscrptn">
                         Create, update configurations. Work with clients, solved their issues.
                     </p>
                 </div>
