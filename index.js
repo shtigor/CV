@@ -23,6 +23,9 @@ const locale = {
         scndCareerName: "Nitka Technologies",
         scndCareerPstn: "Programmer analyst",
         scndCareerDscrptn: "Create surveys and analyze respondent data. Work in team, attend team meetings. Abilities which I've got are read other's people code, work in team, solve tasks quickly. Also I develop my English.",
+        python1: "Create scrappers (online shops, broker company)",
+        python2: "Automation my work",
+        python3: "Solve big variety of tasks",
     },
     ru: {
         about: "О мне",
@@ -48,6 +51,9 @@ const locale = {
         scndCareerName: "Nitka Technologies",
         scndCareerPstn: "Программист-аналитик",
         scndCareerDscrptn: "Создание опросов, создание таблиц для анализа данных респондентов. Работа в команде, в митингах. На данном проекте приобрел навыки работы в команде, чтение чужого кода, решение задач быстро. Также улучшил знания английского языка.",
+        python1: "Создание скраперов",
+        python2: "Автоматизировал свою работу",
+        python3: "Решение различных задач",
     }
 }
 
@@ -81,6 +87,10 @@ let scndCareerName = document.querySelector('.scnd-career-name')
 let scndCareerPstn = document.querySelector('.scnd-career-pstn')
 let scndCareerDscrptn = document.querySelector('.scnd-career-dscrptn')
 
+let python1 = document.querySelector('.python1')
+let python2 = document.querySelector('.python2')
+let python3 = document.querySelector('.python3')
+
 
 // define language using window hash
 if (window.location.hash) {
@@ -108,10 +118,13 @@ if (window.location.hash) {
         fsrtCareerPstn.textContent = locale.ru.fsrtCareerPstn;
         fsrtCareerDscrptn.textContent = locale.ru.fsrtCareerDscrptn;
 
-
         scndCareerDate.textContent = locale.ru.scndCareerDate;
         scndCareerName.textContent = locale.ru.scndCareerName;
         scndCareerDscrptn.textContent = locale.ru.scndCareerDscrptn;
+
+        python1.textContent = locale.ru.python1;
+        python2.textContent = locale.ru.python2;
+        python3.textContent = locale.ru.python3;
     }
 }
 
