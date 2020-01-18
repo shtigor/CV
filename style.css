@@ -98,6 +98,19 @@ body {
     justify-content: center;
 }
 
+.info__python {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    list-style: circle;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+
+.info__python > li {
+    padding: 5px;
+}
+
 .info__project--item {
     width: 300px;
     padding-left: 15px;
