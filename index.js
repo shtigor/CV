@@ -23,6 +23,10 @@ const locale = {
         scndCareerName: "Nitka Technologies",
         scndCareerPstn: "Programmer analyst",
         scndCareerDscrptn: "Create surveys and analyze respondent data. Work in team, attend team meetings. Abilities which I've got are read other's people code, work in team, solve tasks quickly. Also I develop my English.",
+        thirdCareerDate: "February 2020",
+        thirdCareerName: "Syberry",
+        thirdCareerPstn: "Data Engineer",
+        thirdCareerDscrptn: "Create configuration files for datasets, description files of datasets. Develop parsers, which convert from one type extension to another.",
         python1: "Create scrappers (online shops, broker company)",
         python2: "Automation my work",
         python3: "Solve big variety of tasks",
@@ -51,6 +55,10 @@ const locale = {
         scndCareerName: "Nitka Technologies",
         scndCareerPstn: "Программист-аналитик",
         scndCareerDscrptn: "Создание опросов, создание таблиц для анализа данных респондентов. Работа в команде, в митингах. На данном проекте приобрел навыки работы в команде, чтение чужого кода, решение задач быстро. Также улучшил знания английского языка.",
+        thirdCareerDate: "Февраль 2020",
+        thirdCareerName: "Syberry",
+        thirdCareerPstn: "Инженер-программист",
+        thirdCareerDscrptn: "Создание конфигурационных файлов для обработки данных, создание файлов описания данных. Создание скриптов для преобразования файлов из одного типа в другой.",
         python1: "Создание скраперов",
         python2: "Автоматизировал свою работу",
         python3: "Решение различных задач",
@@ -87,6 +95,11 @@ let scndCareerName = document.querySelector('.scnd-career-name')
 let scndCareerPstn = document.querySelector('.scnd-career-pstn')
 let scndCareerDscrptn = document.querySelector('.scnd-career-dscrptn')
 
+let thirdCareerDate = document.querySelector('.third-career-date')
+let thirdCareerName = document.querySelector('.third-career-name')
+let thirdCareerPstn = document.querySelector('.third-career-pstn')
+let thirdCareerDscrptn = document.querySelector('.third-career-dscrptn')
+
 let python1 = document.querySelector('.python1')
 let python2 = document.querySelector('.python2')
 let python3 = document.querySelector('.python3')
@@ -121,6 +134,10 @@ if (window.location.hash) {
         scndCareerDate.textContent = locale.ru.scndCareerDate;
         scndCareerName.textContent = locale.ru.scndCareerName;
         scndCareerDscrptn.textContent = locale.ru.scndCareerDscrptn;
+
+        thirdCareerDate.textContent = locale.ru.thirdCareerDate;
+        thirdCareerPstn.textContent = locale.ru.thirdCareerPstn;
+        thirdCareerDscrptn.textContent = locale.ru.thirdCareerDscrptn;
 
         python1.textContent = locale.ru.python1;
         python2.textContent = locale.ru.python2;
